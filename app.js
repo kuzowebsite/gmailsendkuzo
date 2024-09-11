@@ -8,5 +8,7 @@ function SendMail() {
     }
     emailjs.send("service_tto1xyq", "template_6z9nvqr", params).then(function (res) {
         alert("Амжилтай илгээлээ ! " + res.status);
+           emailjs.send("service_htashl9", "template_6z9nvqr", params).then(function (res){
+            alert("Амжилтай илгээлээ ! " + res.status);
     })
 }
