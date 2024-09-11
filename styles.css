@@ -1,13 +1,15 @@
 * {
     margin: 0;
-    padding: 0;
-    font-family: 'Poppins' , sans-serif;
-    font-size: 20px;
-    box-sizing: border-box;
+      padding: 0;
+      box-sizing: border-box;
 }
 
 body {
-    padding: 20px;
+    font-weight: 300;
+      font-size: 12px;
+      line-height: 30px;
+      color: #272727;
+      background: rgb(14, 190, 243);
 }
 
 input, textarea, button {
@@ -15,7 +17,21 @@ input, textarea, button {
     padding: 8px;
 }
 
+.bagts {
+    max-width: 400px;
+      width: 100%;
+      margin: 0 auto;
+      position: center;
+      text-align: center;
+      
+}
+
 .Send:hover{
-    background: rgb(102, 100, 100);
+    background: rgb(158, 153, 153);
     color: aliceblue;
+
+}
+.Send{
+    border-radius: 10%;
+    
 }
