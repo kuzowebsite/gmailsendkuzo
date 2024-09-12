@@ -15,20 +15,59 @@
 </head>
 <body>
  
+  <div id="wrapper">
+  
+    <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+    <div class="menu">
+      <label class="menu-toggle" for="menu"></label>
+      <ul>
+        <li>
+          <h1>HELP DESK Клуб үйлчилгээний тариф</h1><br><br><br>
+          <div class="tarip">
+          <p> <img src="/image/Page 1/Check Mark.png" alt="helpdesk"> Форматлах: Хатуу диск (HDD/SSD): 7000₮</p> <br>
+          <p> <img src="/image/Page 1/Check Mark.png" alt="helpdesk"> Хэрэглээний программ суулгах: Нэг программ: 1000₮</p><br>
+          <p> <img src="/image/Page 1/Check Mark.png" alt="helpdesk"> Brand сорлиценз суулгах: Лицензийн багц: 10000₮</p><br>
+          </div>
+          <ul><img src="/image/Page 1/Check Mark.png" alt="helpdesk"> Цэвэрлэгээ (Software maintenance)
+            <p> <img src="/image/Page 1/Page 1/Done.png" alt="helpdesk"> Вирус скан: 5000₮</p>
+            <p> <img src="/image/Page 1/Page 1/Done.png" alt="helpdesk"> Хог Файл цэвэрлэх: 5000₮</p>
+            <p> <img src="/image/Page 1/Page 1/Done.png" alt="helpdesk"> Системийн оншилгоо: 5000₮</p>
+            <li>Бусад</li>
+          </ul><br>
+          <div class="tarip">
+          <p> <img src="/image/Page 1/Check Mark.png" alt="helpdesk"> Нэмэлт үйлчилгээ, Бусад тусламж: 6000₮ +</p>
+        </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
 
-    <div class="bagts">
-      <div class="bagts1">
+
+  <h1 class="garchig">Help Desk</h1>
+    <div class="container">
         <br>
-      <h1 class="garchig">Help Desk</h1> <br></br> 
         <input type="text" id="name" placeholder="Нэр" required /><br/><br/>
         <input type="email" id="email_id" placeholder="Gmail" required /><br /><br/>
         <input type="dugaar" id="dugaar_id" placeholder="Дугаар" required /><br /><br/>
         <textarea id="torol" placeholder="Компьютерийн төрөл    Ж: Macbook, Windows" required ></textarea><br /><br/>
         <textarea class="classcss" id="class" placeholder="Анги" required ></textarea><br /><br/>
         <textarea id="message" placeholder="Тайлбар" required ></textarea><br /> 
-        <button class="Send" onclick="SendMail()">Илгээх</button>
+
+        
+        <div class="form-group">
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>torol</option>
+            <option value="student">Macbook</option>
+            <option value="job">Windows</option>
+          </select>
+     </div>
+
+
+        <button type="button" class="button" onclick="this.classList.toggle('button--loading')">
+          <span class="button__text" onclick="SendMail()">Save</span>
+      </button>
       </div>
-    </div>
 
 
 </body>
