@@ -57,3 +57,29 @@ theToggle.onclick = function() {
    toggleClass(this, 'on');
    return false;
 }
+
+//aldaa border
+function validateInput(input) {
+    if (input.value.trim() === "") {
+      input.classList.add("error");
+    } else {
+      input.classList.remove("error");
+    }
+  }
+  
+  const inputs = document.querySelectorAll(".input-field");
+  
+  inputs.forEach(input => {
+    input.addEventListener("blur", function() {
+      validateInput(input);
+    });
+  });
+  
+  document.getElementById("container").addEventListener("send", function(e) {
+    inputs.forEach(input => validateInput(input));
+    
+    if (document.querySelectorAll(".error").length > 0) {
+      e.preventDefault();
+      alert("Бүх талбарыг бөглөнө үү.");
+    }
+  });
