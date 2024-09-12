@@ -149,9 +149,9 @@ input, textarea, button {
   top: 0;
   left: 0;
   background: var(--color-formback);;
-  width: 460px;
+  width: 260px;
   height: 100%;
-  transform: translate3d(-460px, 0, 0);
+  transform: translate3d(-260px, 0, 0);
   transition: transform 0.35s;
 }
       
