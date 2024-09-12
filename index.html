@@ -43,22 +43,22 @@
   
 
 
-  <h1 class="garchig">Help Desk</h1>
+ <h1 class="garchig">Help Desk</h1>
     <div class="container">
-        <input type="text" id="name" placeholder="Нэр" required /><br/><br/>
-        <input type="email" id="email_id" placeholder="Gmail" required /><br /><br/>
-        <input type="dugaar" id="dugaar_id" placeholder="Дугаар" required /><br /><br/>
-        <textarea id="torol" placeholder="Компьютерийн төрөл    Ж: Macbook, Windows" required ></textarea><br /><br/>
-        <textarea class="classcss" id="class" placeholder="Анги" required ></textarea><br /><br/>
-        <textarea class="classcss" id="time" placeholder="Цаг" required ></textarea><br /><br/>
-        <textarea class="setgelhm" id="dugnelt" placeholder="Сэтгэл ханамж бөгөлөн үү Ж: 1-Муу 2-Яахуудээл 3-Дунд 4-Сайн 5-Маш сайн" required ></textarea><br /><br/>
-        <textarea id="message" placeholder="Тайлбар" required ></textarea><br /> 
+      <form id="myForm">
+        <input class="input-field" type="text" id="name" placeholder="Нэр" required /><br/><br/>
+        <input class="input-fields" type="email" id="email_id" placeholder="Gmail" required /><br /><br/>
+        <input class="input-field" type="dugaar" id="dugaar_id" placeholder="Дугаар" required /><br /><br/>
+        <textarea class="input-field" id="torol" placeholder="Компьютерийн төрөл    Ж: Macbook, Windows" required ></textarea><br /><br/>
+        <textarea class="input-field" id="class" placeholder="Анги" required ></textarea><br /><br/>
+        <textarea class="input-field" id="time" placeholder="Цаг" required ></textarea><br /><br/>
+        <textarea class="input-field" id="dugnelt" placeholder="Сэтгэл ханамж бөгөлөн үү Ж: 1-Муу 2-Яахуудээл 3-Дунд 4-Сайн 5-Маш сайн" required ></textarea><br /><br/>
+        <textarea id="message" placeholder="Тайлбар: Бөглөхгүй байсан ч болно." required ></textarea><br /> 
 
-
-        <button type="button" class="button" onclick="this.classList.toggle('button--loading')">
+        <button type="send" class="button" onclick="this.classList.toggle('button--loading')">
           <span class="button__text" onclick="SendMail()">Илгээх</span>
       </button>
-      </div>
+      </form>
     </div>
     
 <video class="videobck" autoplay muted loop>
