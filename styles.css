@@ -90,7 +90,7 @@ input, textarea, button {
     
 }
 .garchig {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -144,25 +144,16 @@ input, textarea, button {
       transform: rotate(1turn);
     }
   }
-
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-
-
     
 .menu {
   position: absolute;
   display: block;
   top: 0;
   left: 0;
-  background: var(--color-formback);;
-  width: 260px;
+  background: rgba(0,0,0,0.9);
+  width: 280px;
   height: 100%;
-  transform: translate3d(-260px, 0, 0);
+  transform: translate3d(-280px, 0, 0);
   transition: transform 0.35s;
 }
       
