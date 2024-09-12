@@ -18,12 +18,9 @@ input, textarea, button {
 }
 
 .bagts {
-    max-width: 400px;
-      width: 100%;
+
       margin: 0 auto;
-      position: center;
       text-align: center;
-      
 }
 
 .Send:hover{
@@ -34,4 +31,7 @@ input, textarea, button {
 .Send{
     border-radius: 10%;
     
+}
+.garchig {
+    font-size: 40px;
 }
