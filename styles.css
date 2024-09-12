@@ -55,6 +55,11 @@ body::before{
     text-align: left;
 }
 
+.setgelhm {
+      width: 250px;
+      height: 100px;
+}
+
 input, textarea, button {
     margin: 4px 0;
     padding: 8px;
