@@ -60,6 +60,19 @@ body::before{
       height: 80px;
 }
 
+.input-field {
+      border: 2px solid gray;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    /* Хоосон үед улаан хүрээ болно */
+    .input-field.error {
+      border: 2px solid red;
+    }
+
 input, textarea, button {
     margin: 4px 0;
     padding: 8px;
