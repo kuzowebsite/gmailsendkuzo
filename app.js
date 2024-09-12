@@ -5,6 +5,7 @@ function SendMail() {
         dugaar_id : document.getElementById("dugaar_id").value,
         torol : document.getElementById("torol").value,
         class : document.getElementById("class").value,
+        time : document.getElementById("time").value,
         message : document.getElementById("message").value,
     }
     emailjs.send("service_7pihjz4", "template_j8qz4jg", params).then(function (res) {
