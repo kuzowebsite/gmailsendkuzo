@@ -14,8 +14,6 @@
   </script>
 </head>
 <body>
- 
-  <div id="wrapper">
   
     <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
     <div class="menu">
@@ -40,7 +38,6 @@
         </li>
       </ul>
     </div>
-  </div>
   
 
 
@@ -52,20 +49,12 @@
         <input type="dugaar" id="dugaar_id" placeholder="Дугаар" required /><br /><br/>
         <textarea id="torol" placeholder="Компьютерийн төрөл    Ж: Macbook, Windows" required ></textarea><br /><br/>
         <textarea class="classcss" id="class" placeholder="Анги" required ></textarea><br /><br/>
+        <textarea class="classcss" id="time" placeholder="Цаг" required ></textarea><br /><br/>
         <textarea id="message" placeholder="Тайлбар" required ></textarea><br /> 
-
-        
-        <div class="form-group">
-          <select id="dropdown" name="role" class="form-control" required>
-            <option disabled selected value>torol</option>
-            <option value="student">Macbook</option>
-            <option value="job">Windows</option>
-          </select>
-     </div>
 
 
         <button type="button" class="button" onclick="this.classList.toggle('button--loading')">
-          <span class="button__text" onclick="SendMail()">Save</span>
+          <span class="button__text" onclick="SendMail()">Илгээх</span>
       </button>
       </div>
 
